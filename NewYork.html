@@ -334,16 +334,7 @@ body {font-family: "Lato", sans-serif}
 <!-- Add Google Maps -->
 <div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
 <script>
-function myMap() {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
+<iframe src="https://www.google.com/maps/d/embed?mid=1q86jUFxTrkh-VyIl3YN-auR-AIM" width="640" height="480"></iframe>
     position: myCenter,
   });
   marker.setMap(map);
