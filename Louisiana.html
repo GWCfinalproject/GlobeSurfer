@@ -21,11 +21,11 @@ body {font-family: "Lato", sans-serif}
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOOD</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FASHION</a>
     <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">CULTURE <i class="fa fa-caret-down"></i></button>     
+      <a href="#Activites" button class="w3-padding-large w3-button" title="More">CULTURE <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Activities</a>
-        <a href="#" class="w3-bar-item w3-button">Night Life</a>
-        <a href="#" class="w3-bar-item w3-button">Interesting Facts</a>
+        <a href="#Activites" class="w3-bar-item w3-button">Activities</a>
+        <a href="#Night Life" class="w3-bar-item w3-button">Night Life</a>
+        <a href="#IF" class="w3-bar-item w3-button">Interesting Facts</a>
       </div>
     </div>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
@@ -197,7 +197,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 <!--Culture-->  
   
-  <div class="w3-black" id="tour">
+  <div class="w3-black" id="Activites">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
      <h2 class="w3-wide"><center>Culture</center></h2>
     <p class="w3-opacity"><i><center>Activities</center></i></p>
@@ -236,7 +236,7 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 <!--Night Life-->
- <div class="w3-black" id="tour">
+ <div class="w3-black" id="Night Life">
     <div class="w3-container w3-content w3-padding-14" style="max-width:800px">
     
     <p class="w3-opacity"><i><center>Night Life</center></i></p>
@@ -275,7 +275,7 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
  
- <div class="w3-container w3-black w3-content w3-center w3-padding-34" style="max-width:800px" id="band">
+ <div class="w3-container w3-black w3-content w3-center w3-padding-34" style="max-width:800px" id="IF">
     <p class="w3-opacity"><i><center>Interesting Facts</center></i></p>
     <div class="w3-container w3-content w3-padding-34" style="max-width:800px">
       
@@ -324,7 +324,6 @@ function myMap() {
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
   var marker = new google.maps.Marker({
     position: myCenter,
   });
@@ -352,7 +351,6 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
@@ -364,7 +362,6 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
 }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
     var x = document.getElementById("navDemo");
@@ -374,7 +371,6 @@ function myFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
